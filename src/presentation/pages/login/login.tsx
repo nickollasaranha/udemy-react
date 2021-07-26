@@ -14,7 +14,7 @@ const Login: React.FC = () => {
         <span className={Styles.link}>Criar conta</span>
         <FormStatus />
       </form>
-    <Footer />
+      <Footer />
     </div>
   )
 }
