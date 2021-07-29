@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx --no-install eslint 'src/**'
-    - run: npm run test:ci
+    - run: npm run test:coveralls
