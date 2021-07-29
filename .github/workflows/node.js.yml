@@ -28,4 +28,9 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx --no-install eslint 'src/**'
+
+    - name: Publish to coveralls.io
+      uses: coverallsapp/github-action@v1.1.3
+      with:
+        github-token: ${{ github.token }}
     - run: npm run test:coveralls
