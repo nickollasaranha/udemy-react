@@ -28,7 +28,7 @@ export const mockUnexpectedError = (url: RegExp, method: string): void => {
   cy.server()
   cy.route({
     method,
-    url: /login/,
+    url,
     status: faker.helpers.randomize([400, 403, 500]),
     response: {
       error: faker.random.words()
